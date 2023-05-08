@@ -20,8 +20,6 @@ const Header = () => {
 
   const { cartItem } = useSelector((state) => state.cart);
 
-  // console.log("cartItem", cartItem);
-
   const controlNavbar = () => {
     if (window.scrollY > 200) {
       if (window.scrollY > lastScrollY && !mobileMenu) {

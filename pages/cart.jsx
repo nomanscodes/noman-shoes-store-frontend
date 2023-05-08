@@ -6,10 +6,10 @@ import { AiOutlineDoubleRight } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
 import { makePaymentRequest } from "@/utils/api";
-// import STRIPE_PUBLISHABALE_KEY from "../utils/usefullConsts";
+
 
 const stripePromise = loadStripe(
-  "pk_test_51N5SmPSGFoj9bxmgSGZyUIPCalfJeWaUkgpVA2ZyTdpheraH1DWTMKjO1GOWSQE94fjv7GvODbsv91iO5wQHl2gB005i9K8l0c"
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABALE_KEY
 );
 
 const Cart = () => {
