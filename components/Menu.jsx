@@ -10,7 +10,6 @@ const data = [
 ];
 
 const Menu = ({ showCatMenu, setShowCatMenu, category }) => {
-
   return (
     <ul className=" hidden md:flex items-center gap-8 font-medium text-black">
       {data.map((item) => {

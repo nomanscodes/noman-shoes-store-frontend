@@ -1,6 +1,5 @@
 import { API_URL, STRAPI_API_TOKEN } from "./usefullConsts";
-
-
+ 
 export const featchDataFromApi = async (endpoint) => {
   var myHeaders = new Headers();
   myHeaders.append("Authorization", `Bearer ${STRAPI_API_TOKEN}`);
